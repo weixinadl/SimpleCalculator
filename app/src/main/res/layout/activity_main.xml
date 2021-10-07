@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="viewEnd"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="bottom|end"
+        android:text=""
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="clear"
+                android:text="C"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="sign"
+
+                android:text="+/-"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="operate"
+
+                android:text="%"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/btn_div"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="operate"
+
+                android:text="÷"
+                android:textSize="@dimen/text_size" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="@dimen/button_size"
+            android:layout_height="@dimen/button_size">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="7"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="8"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="9"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/btn_mul"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="operate"
+
+                android:text="×"
+                android:textSize="@dimen/text_size" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="4"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="5"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="6"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/btn_sub"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="operate"
+
+                android:text="-"
+                android:textSize="@dimen/text_size" />
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="1"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="2"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="3"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_large_size"
+                android:onClick="operate"
+
+                android:text="+"
+                android:textSize="@dimen/text_size" />
+        </TableRow>
+
+        <TableRow
+
+            android:id="@+id/row5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="@dimen/button_large_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_span="2"
+
+                android:onClick="number"
+                android:text="0"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="number"
+
+                android:text="."
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/btn_eq"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="operate"
+
+                android:text="="
+                android:textSize="@dimen/text_size" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
